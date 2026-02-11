@@ -1,0 +1,14 @@
+class MaxInArray {
+    public static void main(String[] args) {
+
+        int[] scores = {45, 78, 90, 66, 82};
+        int max = scores[0];
+
+        for (int i = 1; i < scores.length; i++) {
+            if (scores[i] > max)
+                max = scores[i];
+        }
+
+        System.out.println("Maximum score: " + max);
+    }
+}
