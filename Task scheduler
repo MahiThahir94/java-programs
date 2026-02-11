@@ -1,0 +1,10 @@
+class TaskScheduler extends Thread {
+    public void run() {
+        System.out.println("Thread running");
+    }
+    public static void main(String[] args) {
+        TaskScheduler t = new TaskScheduler();
+        t.start();
+        System.out.println("Main thread");
+    }
+}
