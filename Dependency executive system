@@ -1,0 +1,12 @@
+class DependencyExecution extends Thread {
+    public void run() {
+        System.out.println("Task completed");
+    }
+    public static void main(String[] args) throws Exception {
+        DependencyExecution t1 = new DependencyExecution();
+        DependencyExecution t2 = new DependencyExecution();
+        t1.start();
+        t1.join();
+        t2.start();
+    }
+}
