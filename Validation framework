@@ -1,0 +1,14 @@
+class MyException extends Exception {
+    MyException(String msg) {
+        super(msg);
+    }
+}
+class ValidationFramework {
+    public static void main(String[] args) {
+        try {
+            throw new MyException("Invalid Input");
+        } catch(MyException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
