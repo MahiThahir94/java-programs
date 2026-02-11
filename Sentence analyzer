@@ -1,0 +1,12 @@
+class SentenceAnalyzer {
+    public static void main(String[] args) {
+        String s = "Java programming is powerful";
+        String[] words = s.split(" ");
+        String longest = "";
+        for(int i = 0; i < words.length; i++) {
+            if(words[i].length() > longest.length())
+                longest = words[i];
+        }
+        System.out.println("Longest word: " + longest);
+    }
+}
