@@ -1,0 +1,9 @@
+class ASCIIValue {
+    public static void main(String[] args) {
+        char ch = 'A';   // entered character
+        int ascii = ch; // implicit casting
+
+        System.out.println("Character: " + ch);
+        System.out.println("ASCII value: " + ascii);
+    }
+}
