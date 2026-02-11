@@ -1,0 +1,11 @@
+class Employee {
+    void show() {
+        System.out.println("I am an Employee");
+    }
+}
+class Manager extends Employee {
+    public static void main(String[] args) {
+        Manager m = new Manager();
+        m.show();
+    }
+}
