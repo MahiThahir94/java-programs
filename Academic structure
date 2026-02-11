@@ -1,0 +1,13 @@
+class Person {
+    void display() { System.out.println("Person"); }
+}
+class Teacher extends Person {
+    void role() { System.out.println("Teacher"); }
+}
+class HOD extends Teacher {
+    public static void main(String[] args) {
+        HOD h = new HOD();
+        h.display();
+        h.role();
+    }
+}
