@@ -1,0 +1,26 @@
+class SmallestTwo {
+    public static void main(String[] args) {
+
+        int[] data = {8, 3, 5, 1, 9};
+        int smallest = data[0];
+        int secondSmallest = data[1];
+
+        if (smallest > secondSmallest) {
+            int temp = smallest;
+            smallest = secondSmallest;
+            secondSmallest = temp;
+        }
+
+        for (int i = 2; i < data.length; i++) {
+            if (data[i] < smallest) {
+                secondSmallest = smallest;
+                smallest = data[i];
+            } else if (data[i] < secondSmallest) {
+                secondSmallest = data[i];
+            }
+        }
+
+        System.out.println("Smallest: " + smallest);
+        System.out.println("Second Smallest: " + secondSmallest);
+    }
+}
