@@ -1,0 +1,14 @@
+class SecureData {
+    private int pin;
+    public void setPin(int p) {
+        pin = p;
+    }
+    public int getPin() {
+        return pin;
+    }
+    public static void main(String[] args) {
+        SecureData obj = new SecureData();
+        obj.setPin(1234);
+        System.out.println("PIN: " + obj.getPin());
+    }
+}
